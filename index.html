@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal Buttons with Logo and Description</title>
+    <title>Vertical Buttons with Logo and Description</title>
     <style>
         body, html {
             margin: 0;
@@ -14,23 +14,23 @@
             display: flex;
             flex-direction: column;
         }
-
         .button-container {
             display: flex;
+            flex-direction: column; /* Stack buttons vertically */
             justify-content: center;
             align-items: center;
             width: 100%;
             margin-top: auto;
             padding: 20px 0;
             position: relative;
-            top: -150px; /* Move buttons 80px higher on the screen */
+            top: -80px; /* Move buttons 80px higher on the screen */
         }
 
         .button {
             background-color: #000;
             color: #fff;
-            padding: 40px 50px;
-            margin: 100px 30px;
+            padding: 40px 160px; /* 1 time bigger padding */
+            margin: 15px 0; /* Vertical margin between buttons */
             text-align: center;
             font-size: 3em; /* 1 time bigger font size */
             text-decoration: none;
@@ -39,7 +39,7 @@
         }
 
         .button:hover {
-            background-color: #567db8;
+            background-color: #333;
         }
 
         @media (max-width: 768px) {
@@ -54,13 +54,13 @@
         }
     </style>
 </head>
- <body> 
-    <div class="button-container">
-        <a href="https://adrinebags.github.io/Adrinebags.LVstock.Github.io/" class="button">LV stock</a>
-        <a href="https://adrinebags.github.io/Adrinebags.guccistock.github.io/" class="button">Gucci Stock</a>
-        <a href="https://adrinebags.github.io/Adrinebags.Fendistock.github.io/" class="button">Fendi Stock</a>
-        <a href="https://adrinebags.github.io/Adrinebags.YSLstock.github.io/" class="button">YSL Stock</a>
-    </div>
- </body>
-</html>
+<body>
 
+   <div class="button-container">
+        <a href="https://www.example.com/1" class="button">Button 1</a>
+        <a href="https://www.example.com/2" class="button">Button 2</a>
+        <a href="https://www.example.com/3" class="button">Button 3</a>
+        <a href="https://www.example.com/4" class="button">Button 4</a>
+    </div>
+</body>
+</html>

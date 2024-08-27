@@ -42,7 +42,7 @@
             flex: 1;
             text-align: right;
             padding-left: 20px;
-            font-size: 6em; /* 5 times bigger */
+            font-size: 3em; /* 2 times smaller */
         }
 
         .button-container {
@@ -52,15 +52,17 @@
             width: 100%;
             margin-top: auto;
             padding: 20px 0;
+            position: relative;
+            top: -80px; /* Move buttons 80px higher on the screen */
         }
 
         .button {
             background-color: #000;
             color: #fff;
-            padding: 20px 80px;
+            padding: 40px 160px; /* 1 time bigger padding */
             margin: 0 15px;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 3em; /* 1 time bigger font size */
             text-decoration: none;
             border-radius: 10px;
             transition: background-color 0.3s;
@@ -72,12 +74,12 @@
 
         @media (max-width: 768px) {
             .description-container {
-                font-size: 3em; /* Adjusted for smaller screens */
+                font-size: 1.5em; /* Adjusted for smaller screens */
             }
 
             .button {
-                font-size: 1.2em;
-                padding: 15px 60px;
+                font-size: 1.5em;
+                padding: 20px 80px;
             }
         }
     </style>
@@ -88,7 +90,7 @@
             <img src="download.jpg" alt="Logo"> <!-- Replace with your logo path -->
         </div>
         <div class="description-container">
-            Our Availability :
+           Our Availabilities :
         </div>
     </div>
     
@@ -100,3 +102,4 @@
     </div>
 </body>
 </html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Buttons with Logo and Description</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 50px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .description-container {
+            flex: 1;
+            text-align: right;
+            padding-left: 20px;
+            font-size: 1.2em;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: auto;
+            padding: 20px 0;
+        }
+
+        .button {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 80px;
+            margin: 0 15px;
+            text-align: center;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .description-container {
+                font-size: 1em;
+            }
+
+            .button {
+                font-size: 1.2em;
+                padding: 15px 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            Logo
+        </div>
+        <div class="description-container">
+            Your description goes here.
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <a href="https://www.example.com/1" class="button">Button 1</a>
+        <a href="https://www.example.com/2" class="button">Button 2</a>
+        <a href="https://www.example.com/3" class="button">Button 3</a>
+        <a href="https://www.example.com/4" class="button">Button 4</a>
+    </div>
+</body>
+</html>
